@@ -9,3 +9,16 @@ The partial differential equation(PDE) of the Ideal bar is the following:
 $$\partial^2_t=-\kappa^2\partial^4_xu$$
 and discretised to the finite difference scheme(FD):
 $$\delta_{tt}u^n_l=-\kappa^2\delta_{xxxx}u^n_l$$
+
+## Damping
+In order to model the physics of an actual marimba we also have to add an expression which accounts for the energy loss in the system. 
+This is done by adding the damping term. The expression for damping is given by:
+$$-2\sigma_0\partial_tu+2\sigma_1\partial_t\partial^2_xu$$
+
+Where loss of energy is accounted for with the $\sigma_0$ expression, and the frequency dependant damping is accounted for with the $\sigma_1$ expression. This expands the expression of the ideal bar equation with the following continuous PDE:
+$$\rho A\partial^2_tu=-EI\partial^4_xu-2\sigma_0\partial_tu+2\sigma_1\partial_t\partial^2_x u$$
+and discretised to the FD scheme:
+
+$$\rho A \delta_{tt}u^n_l=-EI\delta_{xxxx}u^n_l-2\sigma_0\delta_tu^n_l+2\sigma_1\delta_t\delta_{xx}u^n_l$$
+
+## Boundary conditions

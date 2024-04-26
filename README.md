@@ -28,4 +28,11 @@ For the mixed derivative in the $\sigma_1$ expression the backward time differen
 derivative.
 $$\rho A\delta_{tt}u^n_l=-EI\delta_{xxxx}u^n_l-2\sigma_0\delta_{t.}u^n_l+2\sigma_1\delta_{t-}\delta_{xx}u^n_l$$
 
+Now expansions to each section can be applied for generating the update equation which is able to be implemented. 
+The expansions for each section is given by:
+
+$$\delta_{tt}u^n_l=\frac{1}{k^2}(u^{n+1}-2u^n_l+u^{n-1}_l)$$
+$$\delta_{xxxx}u^n_l=\frac{1}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2})$$
+$$\delta_{t.}u^n_l=\frac{1}{2k}(u^{n+1}_l-u^{n-1}_l)$$
+
 ## Boundary conditions

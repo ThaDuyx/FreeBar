@@ -21,4 +21,11 @@ and discretised to the FD scheme:
 
 $$\rho A \delta_{tt}u^n_l=-EI\delta_{xxxx}u^n_l-2\sigma_0\delta_tu^n_l+2\sigma_1\delta_t\delta_{xx}u^n_l$$
 
+## Expansions
+We can use finite difference operators to make approximations to the PDE’s derivatives. 
+To generate an explicit finite difference scheme we’ll use a centred time difference approximation for the σ0 expression. 
+For the mixed derivative in the σ1 expression the backward time difference will be used for the temporal
+derivative.
+
+
 ## Boundary conditions

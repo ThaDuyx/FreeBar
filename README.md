@@ -26,6 +26,6 @@ We can use finite difference operators to make approximations to the PDE’s der
 To generate an explicit finite difference scheme we’ll use a centred time difference approximation for the $\sigma_0$ expression. 
 For the mixed derivative in the $\sigma_1$ expression the backward time difference will be used for the temporal
 derivative.
-
+$$\rho A\delta_{tt}u^n_l=-EI\delta_{xxxx}u^n_l-2\sigma_0\delta_{t.}u^n_l+2\sigma_1\delta_{t-}\delta_{xx}u^n_l$$
 
 ## Boundary conditions

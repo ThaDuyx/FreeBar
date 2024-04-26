@@ -48,17 +48,23 @@ A mixed derivative as seen above can be approximated by applying each operator o
 
 
 and then the second-order difference in space to:
+```math
+\delta_{t-}\delta_{xx}u^n_l = \frac{1}{k}(\frac{u^{n}_{l+1}-2u^{n}_{l}-2u^{n}_{l+1}}{h^2}-\frac{u^{n-1}_{l+1}-2u^{n-1}_{l}-2u^{n-1}_{l+1}}{h^2})
+```
 
-$$\delta_{t-}\delta_{xx}u^n_l = \frac{1}{k}(\frac{u^{n}_{l+1}-2u^{n}_{l}-2u^{n}_{l+1}}{h^2}-\frac{u^{n-1}_{l+1}-2u^{n-1}_{l}-2u^{n-1}_{l+1}}{h^2})$$
 
 and reduced to:
+```math
+\delta_{t-}\delta_{xx}u^n_l = \frac{1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}-2u^{n}_{l+1}-u^{n-1}_{l+1}-2u^{n-1}_{l}-2u^{n-1}_{l+1})
+```
 
-$$\delta_{t-}\delta_{xx}u^n_l = \frac{1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}-2u^{n}_{l+1}-u^{n-1}_{l+1}-2u^{n-1}_{l}-2u^{n-1}_{l+1})$$
 
 ## Update equation
 With the expansions made, these could be substituted into the equation.
+```math
+\rho A\frac{1}{k^2}(u^{n+1}-2u^n_l+u^{n-1}_l)-\frac{EI}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2}) - \frac{2\sigma_0}{k}(u^{n+1}_l-u^{n-1}_l) +\frac{2\sigma_1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}+u^{n}_{l-1}-u^{n-1}_{l+1}+2u^{n-1}_{l}-u^{n-1}_{l-1})
+```
 
-$$\rho A\frac{1}{k^2}(u^{n+1}-2u^n_l+u^{n-1}_l)-\frac{EI}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2}) - \frac{2\sigma_0}{k}(u^{n+1}_l-u^{n-1}_l) +\frac{2\sigma_1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}+u^{n}_{l-1}-u^{n-1}_{l+1}+2u^{n-1}_{l}-u^{n-1}_{l-1})$$
 
 
 

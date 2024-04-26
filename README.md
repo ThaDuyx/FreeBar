@@ -64,7 +64,11 @@ With the expansions made, these could be substituted into the equation.
 ```math
 \rho A\frac{1}{k^2}(u^{n+1}-2u^n_l+u^{n-1}_l)-\frac{EI}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2}) - \frac{2\sigma_0}{k}(u^{n+1}_l-u^{n-1}_l) +\frac{2\sigma_1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}+u^{n}_{l-1}-u^{n-1}_{l+1}+2u^{n-1}_{l}-u^{n-1}_{l-1})
 ```
+Solving for $u^{n+1}_l$ yields:
 
+```math
+u^{n+1}=2u^n_l-u^{n-1}_l+\frac{k^2}{\rho A}(-\frac{EI}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2})-\frac{2\sigma_0}{k}(u^{n+1}_l-u^{n-1}_l)+\frac{2\sigma_1}{kh^2}(u^{n}_{l+1}-2u^{n}_{l}+u^{n}_{l-1}-u^{n-1}_{l+1}+2u^{n-1}_{l}-u^{n-1}_{l-1}))
+```
 
 
 

@@ -42,8 +42,10 @@ $$\delta_{t.}u^n_l=\frac{1}{2k}(u^{n+1}_l-u^{n-1}_l)$$
 $$\delta_{t-}\delta_{xx}u^n_l$$
 
 A mixed derivative as seen above can be approximated by applying each operator one by one in no specific order. In this case, the backward time difference was applied first to give:
+```math
+\delta_{t-}\delta_{xx}u^n_l = \frac{1}{k}(\delta_{xx}u^{n}_{l}-\delta_{xx}u^{n-1}_{l})
+```
 
-$$\delta_{t-}\delta_{xx}u^n_l = \frac{1}{k}(\delta_{xx}u^{n}_{l}-\delta_{xx}u^{n-1}_{l})$$
 
 and then the second-order difference in space to:
 

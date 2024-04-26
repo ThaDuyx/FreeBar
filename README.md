@@ -32,7 +32,9 @@ Now expansions to each section can be applied for generating the update equation
 The expansions for each section is given by:
 
 $$\delta_{tt}u^n_l=\frac{1}{k^2}(u^{n+1}-2u^n_l+u^{n-1}_l)$$
+
 $$\delta_{xxxx}u^n_l=\frac{1}{h^4}(u^n_{l+2}-4u_{l+1}^n+6u^n_l-4u^n_{l-1}+u^n_{l-2})$$
+
 $$\delta_{t.}u^n_l=\frac{1}{2k}(u^{n+1}_l-u^{n-1}_l)$$
 
 ## Boundary conditions
